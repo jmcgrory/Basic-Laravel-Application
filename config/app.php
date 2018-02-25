@@ -160,6 +160,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // Collective HTML forms
+        Collective\Html\HtmlServiceProvider::class,
+
+        // WiziWig
+        Unisharp\Ckeditor\ServiceProvider::class,
     ],
 
     /*
@@ -209,6 +214,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        // Collective Forms
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
