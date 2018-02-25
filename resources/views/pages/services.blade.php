@@ -2,11 +2,11 @@
 
 @section('content')
     <h1>{{$title}}</h1>
-    <p>Non sit enim eu occaecat in velit deserunt. Laborum consequat do elit dolore fugiat tempor culpa est. Amet laboris nisi aliquip eiusmod officia laborum ex qui. Duis adipisicing elit duis consequat.</p>
+    <p>Proident laborum anim incididunt sit anim qui aute. Pariatur non et sit Lorem ipsum sunt ad ut ut est. Est quis enim duis fugiat consequat irure laboris. Sunt ad minim do veniam pariatur qui nisi.</p>
     @if(count($services)>0)
-        <ul>
+        <ul class="list-group">
             @foreach($services as $service)
-                <li>{{$service}}</li>
+                <li class="list-group-item">{{$service}}</li>
             @endforeach
         </ul>
     @endif
