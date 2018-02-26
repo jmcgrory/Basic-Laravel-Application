@@ -31,3 +31,8 @@
 
     // Resource Route
     Route::resource('posts', 'PostsController');
+
+    // AUTH
+    Auth::routes();
+
+    Route::get('/dashboard', 'DashboardController@index');

@@ -6,7 +6,7 @@
     @foreach($posts as $post)
       <article class="well">
         <h3>{{$post->title}}</h3>
-        <small>Written on <time>{{$post->created_at}}</time></small>
+        <small>Written on <time>{{$post->created_at}}</time> by {{$post->user->name}}</small>
         <p>
         <a href="/posts/{{$post->id}}" class="btn btn-primary">View Post</a>
         </p>
