@@ -27,7 +27,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    // relation with User (has many)
+    /**
+     *  relation with User (has many)
+     * 
+     * @return HasMany
+     */
     public function posts(){
         return $this->hasMany('App\Post');
     }

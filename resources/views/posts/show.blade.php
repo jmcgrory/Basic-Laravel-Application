@@ -5,6 +5,12 @@
 <article>
   <a href="/posts" class="btn btn-success">Back</a>
   <h1>{{ $post->title }}</h1>
+
+  <img style="width:100%;height:auto;" src="/storage/cover_images/{{$post->cover_image}}" alt="{{ $post->title }} Cover Image">
+  
+  <br/>
+  <br/>
+
   <div class="content">
     {!! $post->body !!}
   </div>
